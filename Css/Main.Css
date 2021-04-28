@@ -1,0 +1,219 @@
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #0e0013;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 5%;
+
+    font-size: 40px;
+    display: inline-block;
+    color: rgb(250 198 242);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10%;
+
+    font-size: 40px;
+    display: inline-block;
+    color: rgb(250 198 242);
+}
+
+ul li {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    display: inline-block;
+    color: rgb(250 ,198, 242);
+}
+
+/* frame-work  */
+@keyframes neon-glow-box {
+    from {
+        box-shadow: 0 0 25px 5px #9b40ff;
+
+
+    }
+
+    to {
+        box-shadow: 0 0 25px 15px #9b40ff;
+
+    }
+
+}
+
+@keyframes neon-glow-text {
+    from {
+        text-shadow: 0px 0px 5px #9b40ff;
+
+
+    }
+
+    to {
+        text-shadow: 0px 0px 30px #9b40ff;
+
+    }
+
+}
+
+.neon-border {
+    overflow: hidden;
+
+    border: 5px solid rgb(228, 198, 250);
+    box-shadow: 0 0 25px 5px #9b40ff;
+    animation-name: neon-glow-box;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.neon-text {
+    color: rgb(250, 198, 242);
+    text-shadow: 0px 0px 5px #f249b0;
+    animation-name: neon-glow-text;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* end of frame-work  */
+
+.ring {
+
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 85vh;
+    background-color: #492360;
+    background-image: linear-gradient(to bottom left, #8f0098a1, #411748 30%, #411748 70%, #8f0098a1);
+    border-radius: 20px 20px;
+
+}
+
+.image-neon {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 50%;
+    height: 85%;
+    bottom: 0%;
+    right: 5%;
+}
+
+.image-neon img {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    height: 100%;
+}
+
+.big-one {
+    margin: 0px;
+    padding: 0px;
+    display: float;
+    z-index: -1;
+    position: absolute;
+    width: 130%;
+    height: 140%;
+    background-color: #c89dec;
+    background-image: linear-gradient(to bottom left, #ff00c89e, #c89dec 40%, #c89dec 60%, #ff00c89e);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.mid-one {
+    margin: 0px;
+    padding: 0px;
+    display: float;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-color: #ef48a2;
+    background-image: linear-gradient(to top left, #c89dec, #ef48a2 40%, #ef48a2 60%, #c89dec);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.small-one {
+    margin: 0px;
+    padding: 0px;
+    display: float;
+    z-index: -1;
+    position: absolute;
+    width: 65%;
+    height: 75%;
+    background-color: #411748;
+    background-image: linear-gradient(to bottom left, #ef48a2, #411748 40%, #411748 60%, #ef48a2);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.ring-info {
+    position: absolute;
+    color: white;
+    width: 35%;
+    height: 100%;
+    top: 50%;
+    left: 0%;
+    transform: translate(1%, -25%);
+
+}
+
+.days-count {
+    animation-name: neon-glow-box;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px auto;
+    background: #f24297;
+    background-image: linear-gradient(to left, #411748, #f24297 50%, #f24297 50%, #411748);
+
+    font-size: 40px;
+    width: 230px;
+    border-radius: 15px 15px;
+    height: 55px;
+
+}
+
+.second-line {
+    font-weight: bold;
+
+    text-align: center;
+    margin: 15% 0%;
+    font-size: 60px;
+    color: #dddddd;
+}
+
+.last-line {
+    text-align: center;
+    color: #c89dec;
+    font-size: 40px;
+}
